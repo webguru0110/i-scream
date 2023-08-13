@@ -1,0 +1,160 @@
+<header class="page-header container" id="header">
+  <a href="" class="header-logo-container">
+    <picture>
+      <source
+        srcset="
+          ./images/header/logo-desk.png    1x,
+          ./images/header/logo-desk@2x.png 2x
+        "
+        media="(min-width: 1200px"
+      />
+
+      <source
+        srcset="
+          ./images/header/logo-tab.png    1x,
+          ./images/header/logo-tab@2x.png 2x
+        "
+        media="(min-width: 768px"
+      />
+      <source
+        srcset="
+          ./images/header/logo-mob.png    1x,
+          ./images/header/logo-mob@2x.png 2x
+        "
+        media="(max-width: 767px"
+      />
+      <img src="./images/header/logo-mob.png" alt="Логотип сторінки" />
+    </picture>
+  </a>
+
+  <button
+    type="button"
+    class="logo__modal-helloween"
+    data-about-scream-modal-open
+  >
+    <picture>
+      <source
+        srcset="
+          ./images/header/i-scream-desc.png    1x,
+          ./images/header/i-scream-desc@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+
+      <source
+        srcset="
+          ./images/header/i-scream-tab.png    1x,
+          ./images/header/i-scream-tab@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="
+          ./images/header/i-scream-mob.png    1x,
+          ./images/header/i-scream-mob@2x.png 2x
+        "
+        media="(min-width: 280px)"
+      />
+
+      <img src="./images/header/i-scream-mob.png" alt="Лого команди" />
+    </picture>
+  </button>
+
+  <ul class="page-header__nav">
+    <li class="page-header__nav_items">
+      <a href="#header" class="page-header__nav_links">Home</a>
+    </li>
+    <li class="page-header__nav_items">
+      <a href="#about" class="page-header__nav_links">How it's made</a>
+    </li>
+    <li class="page-header__nav_items">
+      <a href="#products" class="page-header__nav_links">Our products</a>
+    </li>
+    <li class="page-header__nav_items">
+      <a href="#contacts" class="page-header__nav_links">Contacts</a>
+    </li>
+  </ul>
+
+  <div class="header-butn">
+    <button type="button" class="mobile-menu-burger" mobile-header-menu-open>
+      <svg class="mobile-menu-burger__icon" width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="page-header-btn">
+      Buy now&nbsp;
+      <svg width="12" height="12" class="page-header-btn__icon">
+        <use href="./images/sprite.svg#icon-arrow-head"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu container" mobile-header-menu>
+    <div class="container mobile-menu__container">
+      <button class="mobile-menu__close-btn" mobile-header-menu-close>
+        <svg class="mobile-menu__close-icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/header/logo-desk.png    1x,
+              ./images/header/logo-desk@2x.png 2x
+            "
+            media="(min-width: 1200px"
+          />
+
+          <source
+            srcset="
+              ./images/header/logo-tab.png    1x,
+              ./images/header/logo-tab@2x.png 2x
+            "
+            media="(min-width: 768px"
+          />
+          <source
+            srcset="
+              ./images/header/logo-mob.png    1x,
+              ./images/header/logo-mob@2x.png 2x
+            "
+            media="(max-width: 767px"
+          />
+
+          <img src="./images/header/logo-mob.png" alt="Логотип сторінки" />
+        </picture>
+      </div>
+
+      <div class="mobile-menu-nav-container">
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__nav_items">
+            <a href="#header" class="mobile-menu__nav_links">Home</a>
+          </li>
+          <li class="mobile-menu__nav_items">
+            <a href="#about" class="mobile-menu__nav_links">How it's made</a>
+          </li>
+          <li class="mobile-menu__nav_items">
+            <a href="#products" class="mobile-menu__nav_links">Our products</a>
+          </li>
+          <li class="mobile-menu__nav_items">
+            <a href="#contacts" class="mobile-menu__nav_links">Contact</a>
+          </li>
+        </ul>
+
+        <div class="btn-container">
+          <button type="button" class="mobile-menu-btn">
+            Buy now&nbsp;
+            <svg width="12" height="12">
+              <use href="./images/sprite.svg#icon-arrow-head"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/mobile-menu.js" type="module"></script>
+  <script src="./js/products-modal-scream.js" type="module"></script>
+</header>
